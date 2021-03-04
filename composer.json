@@ -1,0 +1,32 @@
+{
+    "name": "merlby/crudify",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "merlby",
+            "email": "vitaly@zerogravity.kz"
+        }
+    ],
+    "minimum-stability": "dev",
+    "version": "1.0.0",
+    "require": {
+        "doctrine/dbal": "^2.10",
+        "jamesmills/laravel-timezone": "^1.9",
+        "laravel/framework": "^8.0",
+        "laravel/ui": "^3.0",
+        "protonemedia/laravel-form-components": "^2.1",
+        "yajra/laravel-datatables": "^1.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Merlby\\Crudify\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Merlby\\Crudify\\Providers\\CrudifyServiceProvider"
+            ]
+        }
+    }
+}
